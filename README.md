@@ -137,14 +137,6 @@ The project uses Tailwind CSS v4 with custom animations defined in `globals.css`
 - Minimal bundle size
 - Fast page loads
 
-## 📞 Contact
-
-**Sumit**
-- Email: sk6306210@gmail.com
-- Phone: +91-8053104059
-- Location: Gurugram, India
-- GitHub: [https://github.com/Sumit1003](https://github.com/Sumit1003)
-- LinkedIn: [https://www.linkedin.com/in/sumit-s30/](https://www.linkedin.com/in/sumit-s30/)
 
 ## 📄 License
 
