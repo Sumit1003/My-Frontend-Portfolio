@@ -33,7 +33,6 @@ export function Projects() {
       description:
         "A user-friendly movie and TV show search application where users can discover, filter, and manage their favorite content with ease.",
       technologies: ["React.js", "APIs", "JavaScript", "CSS"],
-      duration: "Jan 2025 - Feb 2025",
       liveDemo: "https://sumit1003.github.io/Movies-Finder-app/",
       github: "https://github.com/Sumit1003/Movies-Finder-app",
       features: [
@@ -48,8 +47,8 @@ export function Projects() {
       description:
         "An interactive quiz application with dynamic categories, score tracking, and enhanced user experience through improved UI/UX design.",
       technologies: ["JavaScript", "React.js", "APIs", "LocalStorage"],
-      duration: "March 2025 - Apr 2025",
-      github: "#",
+      liveDemo: "https://quiz-app-sumit1003s-projects.vercel.app/",
+      github: "https://github.com/Sumit1003/Quiz-App",
       features: [
         "Added 10 dynamic quiz categories with unique icons",
         "Built responsive category dashboard using CSS Grid/Flexbox",
@@ -58,7 +57,101 @@ export function Projects() {
         "Enhanced UI/UX with visual indicators and feedback",
       ],
     },
-  ]
+    {
+      title: "Resume Builder — ATS-Ready Resume Maker",
+      description:
+        "A modern, interactive resume builder for students and new grads. Create professional, ATS-friendly resumes with real-time preview, customizable templates, and built-in guidance.",
+      technologies: ["React.js", "Next.js", "Tailwind CSS", "JavaScript"],
+      liveDemo: "https://cvcraft-cyan.vercel.app/",
+      github: "https://github.com/Sumit1003/cvcraft",
+      features: [
+        "Step-by-step builder with real-time preview and form validation",
+        "4+ ATS-optimized templates with filtering and live template preview",
+        "Built-in ATS guide with keyword suggestions, best practices, and pitfalls to avoid",
+        "Deep customization: fonts, sizing, color palettes, spacing, header styles",
+        "Multi-format export: PDF, DOCX, and HTML (ATS-friendly structure)",
+      ],
+    },
+    {
+      title: "Auth UI – Login Page & Dashboard",
+      description:
+        "A simple and responsive authentication UI built with HTML, CSS, and JavaScript. Includes login, sign-up, and forgot password navigation with clean and minimal design.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      liveDemo: "https://sumit1003.github.io/Auth-UI/",
+      github: "https://github.com/Sumit1003/Auth-UI",
+      features: [
+        "Clean, minimal, and mobile-friendly design",
+        "Login form with username & password fields",
+        "Forgot Password and Sign Up navigation links",
+        "Easy to customize (colors, typography, and assets)",
+      ],
+    },
+    {
+      title: "Modern MP3 Player",
+      description:
+        "A beautifully designed, responsive music player built with HTML, CSS, and JavaScript. Mimics popular streaming apps with playlist management, volume control, and media playback.",
+      technologies: [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Audio API",
+        "Feather Icons",
+      ],
+      liveDemo: "https://music-player-dshbored.vercel.app/",
+      github: "https://github.com/Sumit1003/Music-Player-Dshbored",
+      features: [
+        "Minimal, modern UI with smooth animations and transitions",
+        "Responsive layout with sidebar navigation (Home, Search, Library",
+        "FMusic controls: Play/Pause, Next, Previous, Shuffle, Repeat",
+        "Playlist management with categories & liked songs",
+      ],
+    },
+    {
+      title: "Weather & Task Manager App",
+      description:
+        "A web-based application combining real-time weather updates with a simple yet effective task manager. Built for productivity with smooth UI, animations, and dark mode support.",
+      technologies: ["HTML", "CSS", "JavaScript", "OpenWeatherMap API"],
+      liveDemo: "https://weather-app-sumit1003s-projects.vercel.app/",
+      github: "https://github.com/Sumit1003/Weather-app",
+      features: [
+        "Real-time weather data (temperature, humidity, wind, 5-day forecast) via OpenWeatherMap API",
+        "City search functionality with dynamic weather icons",
+        "Dark/Light mode toggle with smooth transitions",
+        "Task management: add, edit, delete tasks with priorities & due dates",
+      ],
+    },
+    {
+      title: "Multi-functional Clock",
+      description:
+        "A web application that combines a digital & analog clock, stopwatch, and countdown timer into one interface. Includes timezone selection, dark/light mode, and full responsiveness across devices.",
+      technologies: ["HTML5", "CSS3", "JavaScript(ES6)"],
+      liveDemo: "https://multi-functional-clock.vercel.app/",
+      github: "https://github.com/Sumit1003/Multi-functional-Clock",
+      features: [
+        "Digital & analog clock with current date",
+        "Timezone selection for viewing different time zones",
+        "Stopwatch with start, stop, reset & lap recording",
+        "Countdown timer with start, pause & reset controls",
+        "Dark/Light mode toggle with smooth transitions",
+        "Responsive design for all screen sizes",
+      ],
+    },
+    {
+      title: "🍔 FoodDash - Admin Dashboard",
+      description:
+        "FoodDash is a responsive and interactive admin dashboard designed for food delivery businesses. It provides analytics, order management, and customization features to help streamline business operations.",
+      technologies: ["HTML5", "CSS3", "JavaScript(ES6)"],
+      liveDemo: "https://sumit1003.github.io/Food-Dash/",
+      github: "https://github.com/Sumit1003/Food-Dash",
+      features: [
+        "📊 Analytics Dashboard – View total sales, orders, and new customers.",
+        "📦 Order Management – Track and update order statuses.",
+        "⚙ Settings Page – Manage user profile and preferences",
+        "🌙 Dark Mode Support (planned)",
+        "📱 Responsive Design – Optimized for both desktop and mobile.",
+      ],
+    },
+  ];
 
   return (
     <section id="projects" ref={sectionRef} className="py-20 bg-background">
@@ -83,10 +176,6 @@ export function Projects() {
                 <CardHeader>
                   <div className="flex items-center justify-between mb-2">
                     <CardTitle className="text-xl font-bold text-foreground">{project.title}</CardTitle>
-                    <div className="flex items-center text-muted-foreground text-sm">
-                      <Calendar className="h-4 w-4 mr-1" />
-                      {project.duration}
-                    </div>
                   </div>
                   <p className="text-card-foreground leading-relaxed">{project.description}</p>
                 </CardHeader>

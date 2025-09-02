@@ -50,6 +50,7 @@ export function Hero() {
             >
               View My Work
             </Button>
+            <a href="/resume.pdf" download>
             <Button
               variant="outline"
               size="lg"
@@ -57,7 +58,8 @@ export function Hero() {
             >
               <Download className="mr-2 h-5 w-5" />
               Download Resume
-            </Button>
+              </Button>
+            </a>
           </div>
 
           <div

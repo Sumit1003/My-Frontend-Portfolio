@@ -15,6 +15,9 @@ export const metadata: Metadata = {
   description:
     "Frontend Developer specializing in React.js, JavaScript, and UI/UX design. Passionate about building intuitive, responsive, and dynamic web experiences.",
   generator: "v0.app",
+  icons: {
+    icon: "/favico.png",
+  }
 }
 
 export default function RootLayout({
